@@ -47,7 +47,7 @@ public class ClientServiceImpl implements ClientService {
 
         if (!ObjectUtils.isEmpty(lawyer)) {
             lawyer.getPatList().add(client);
-//            lawyer.save(lawyer);
+            lawyerRepository.save(lawyer);
         }
     }
 

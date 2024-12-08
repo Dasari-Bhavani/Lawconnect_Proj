@@ -2,6 +2,9 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Welcome to LawConnect Application</title>
     <style>
         body {
@@ -66,7 +69,69 @@
     </style>
 </head>
 <body>
-<h1>Welcome to LawConnect Application</h1>
+
+
+
+
+
+<div class="slideshow-container">
+    <!-- images -->
+    <div class="mySlides fade">
+        <img src="https://res.cloudinary.com/dgccnrp7w/image/upload/v1733636594/image1_1_jzqpgn.png" style="width: 100%" />
+
+        <div class="centered">
+            <p>
+                Welcome to <b><span class="first-letter">LawConnect</span></b>
+                <br />
+                <b>A LAWYER RECOMMENDATION AND SEARCH SYSTEM!</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://res.cloudinary.com/dgccnrp7w/image/upload/v1733636594/image4_1_kjmu6x.jpg"
+             style="width: 100%" />
+        <div class="centered">
+            <p>
+                Welcome to <b><span class="first-letter">LawConnect</span></b>
+                <br />
+                <b>WE ARE VOICE OF JUSTICE!</b>
+            </p>
+        </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://res.cloudinary.com/dgccnrp7w/image/upload/v1733636595/image3_1_reokbf.png"
+             style="width: 100%" />
+
+        <div class="centered">
+            <p>
+                Welcome to <b><span class="first-letter">LawConnect</span></b>
+                <br />
+                <b>CONNECTING YOU WITH LEGAL EXPERTS, SEAMLESSLY.</b>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div style="text-align: center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+<h1>LawConnect Application</h1>
+
 <div class="container">
     <div class="options">
         <div class="option">
@@ -101,5 +166,77 @@
         </div>
     </div>
 </div>
+
+
+
+<div class="intro">
+    <div class="description">
+        <h2 class="headline">"Connect, Consult, Resolve: Your Path to Trusted Legal Assistance Starts Here!"</h2>
+        <p class="para">
+            Our platform connects clients with highly skilled lawyers based on their specific legal needs and location.
+            Whether you're seeking advice, representation, or consultation, LawConnect ensures you find the right professional for your case.
+            With a user-friendly interface, clients can quickly search for lawyers, view their profiles, and choose based on expertise and proximity.
+            Our goal is to provide a seamless and reliable experience, making legal support simple and hassle-free for everyone.
+        </p>
+    </div>
+
+    <div class="description">
+        <h2 class="headline">Find the Right Lawyer, Anytime, Anywhere: Your Legal Solution Awaits!</h2>
+        <p class="para">
+            At LawConnect, we understand the importance of having the right legal support at your fingertips.
+            Our platform offers a comprehensive directory of lawyers, each with verified credentials and specialized expertise to address your unique legal challenges.
+            With real-time location-based search, you can quickly connect with professionals in your area, saving time and effort.
+            Whether it's personal, corporate, or family law, LawConnect provides you with a trusted network of experts ready to assist when you need them most.
+        </p>
+        </p>
+    </div>
+
+</div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: LawConnect@gmail.com</p>
+            <p>Phone: +91 1123456789</p>
+        </div>
+
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/LawConnect/"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/company/LawConnect/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;2024 LawConnect.com, All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
 </body>
 </html>

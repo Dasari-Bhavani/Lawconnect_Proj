@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0;
+  height: 100%; */
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #333; */
+}
+.mySlides {
+  display: none;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  width:100%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+.slideshow-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  text-align: center;
+  white-space: nowrap; /* Prevents text from wrapping */
+  animation: writeText 5s linear forwards;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .centered p{
+      font-size: 18px;
+    }
+  }
+
+.first-letter {
+  color: orange;
+}
+
+@keyframes writeText {
+  from {
+    transform: translateX(-75%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.intro{
+    background-color:  #8080804a;
+}
+
+.description{
+
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 50px;
+}
+.headline ,.para{
+    width:50%;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.headline{
+    margin-top: 50px;
+}
+
+
+
+footer {
+    background-color: #333; /* Grey background color for the footer */
+    color: #fff; /* White text color */
+    padding: 30px 0; /* Padding to add space above and below the footer content */
+  }
+
+  .footer-content {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    display: flex;
+    justify-content: space-between; /* Space out the items evenly */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .contact-info,
+  .social-media {
+    flex: 1; /* Each section takes up equal space */
+  }
+
+  .contact-info h3,
+  .social-media h3 {
+    color: #fff; /* White text color */
+  }
+
+  .contact-info p {
+    margin: 0; /* Remove default margin */
+  }
+
+  .social-media ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+
+  .social-media ul li {
+    margin-bottom: 10px; /* Add spacing between social media links */
+  }
+
+  .social-media ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  .copyright {
+    text-align: center; /* Center-align copyright text */
+    margin-top: 20px; /* Add space above copyright text */
+  }
+
+.social-media ul li a .fab.fa-facebook-f {
+    color: #1877f2; /* Blue color similar to Facebook's brand color */
+  }
+
+  .social-media ul li a .fab.fa-twitter {
+    color: #1DA1F2; /* Blue color similar to Twitter's brand color */
+  }
+  /* Include Font Awesome CSS file */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Style the LinkedIn icon */
+.social-media ul li a .fab.fa-linkedin {
+  color: #0077B5; /* LinkedIn brand color */
+}
+
