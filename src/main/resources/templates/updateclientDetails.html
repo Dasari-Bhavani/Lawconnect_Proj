@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Update Details</h2>
+
+    <form th:action="@{/updateClient}" method="post" th:object="${client}">
+        <table>
+            <input type="hidden" name="pid" th:value="${client.pid}"/>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" th:field="*{pname}" th:value="${client.pname}"/></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" th:field="*{age}" th:value="${client.age}"/></td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" th:field="*{city}" th:value="${client.city}"/></td>
+            </tr>
+            <tr>
+                <td>Phone No</td>
+                <td><input type="text" th:field="*{phoneNo}" th:value="${client.phoneNo}"/></td>
+            </tr>
+            <tr>
+                <td>E-Mail</td>
+                <td><input type="text" th:field="*{email}" th:value="${client.email}"/></td>
+            </tr>
+            <tr>
+                <td>PIN</td>
+                <td><input type="password" th:field="*{pin}" th:value="${client.pin}"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

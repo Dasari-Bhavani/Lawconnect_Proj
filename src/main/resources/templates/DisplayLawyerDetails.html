@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Completed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Registration Completed!</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Lawyer ID</td>
+            <td th:text="${lawyer.id}"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td th:text="${lawyer.name}"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td th:text="${lawyer.age}"></td>
+        </tr>
+        <tr>
+            <td>Specialization</td>
+            <td th:text="${lawyer.specialization}"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td th:text="${lawyer.city}"></td>
+        </tr>
+        <tr>
+            <td>Phone No</td>
+            <td th:text="${lawyer.phNo}"></td>
+        </tr>
+        <tr>
+            <td>E-Mail</td>
+            <td th:text="${lawyer.eMail}"></td>
+        </tr>
+        <tr>
+            <td>Pin</td>
+            <td th:text="${lawyer.pin}"></td>
+        </tr>
+    </table>
+    <br><br>
+    <form action="index.html">
+        <input type="submit" value="Homepage">
+    </form>
+</div>
+</body>
+</html>
