@@ -1,10 +1,10 @@
-# Hospital Management Application
+# Lawyer Management Application
 
-Welcome to the Hospital Management Application project!
+Welcome to the Lawyer Management Application project!
 
 ## Description
 
-This project is a web-based application developed using Spring Boot for managing hospital operations such as patient registration, doctor management, appointment scheduling, and more.
+This project is a web-based application developed using Spring Boot for managing hospital operations such as client registration, lawyer management, appointment scheduling, and more.
 
 ## Usage
 
@@ -17,7 +17,7 @@ To use the application, follow these steps:
     ```shell
     mvn clean install -U
     ```
-5. Open your web browser and visit [http://localhost:8080](http://localhost:8080) to access the application.
+5. Open your web browser and visit [http://localhost:9090](http://localhost:9090) to access the application.
 
 ## Technologies Used
 
@@ -32,7 +32,3 @@ To use the application, follow these steps:
 
 - Username: admin
 - Password: admin
-
----
-
-![hospital-management-application.png](app-screenshots/hospital-management-application.png)
